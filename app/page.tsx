@@ -1,20 +1,16 @@
 "use client";
 import Sidebar from "./Components/Sidebar";
 import Header from "./Components/Header";
-import { useState } from "react";
+import "./page.css";
 
 export default function Home() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
   return (
     <>
       <div className="flex gap-2">
-        <Sidebar />
-        <div>
+        <div className="w-1/6">
+          <Sidebar />
+        </div>
+        <div className="w-5/6">
           <Header />
           <main>
             <>
@@ -109,7 +105,7 @@ export default function Home() {
                         </td>
                         <td className="border px-4 py-2 text-center">---</td>
                       </tr>
-                      {/* Add more rows as needed */}
+
                       <tr>
                         <td className="border px-4 py-2 text-center">
                           <input type="checkbox" />
