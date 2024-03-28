@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import "./Sidebar.css"; // Import your sidebar styles
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
