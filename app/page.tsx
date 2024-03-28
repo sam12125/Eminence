@@ -1,7 +1,6 @@
 "use client";
 import Sidebar from "./Components/Sidebar";
 import Header from "./Components/Header";
-import "./page.css";
 
 export default function Home() {
   return (
